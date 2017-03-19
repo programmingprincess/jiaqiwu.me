@@ -109,7 +109,7 @@ h4.small {
 	border: none;
 	border-bottom: 1px solid transparent;
 	border-raidus: 0;
-	transition: background-color 0.3s ease-in-out, border 0.1s ease-in-out;
+	/*transition: background-color 0.3s ease-in-out, border 0.1s ease-in-out;*/
 }
 
 .navbar a {
@@ -166,23 +166,25 @@ ul.nav a:focus {
 	transition: background-color 0.5s ease-in-out, border 0.8s ease-in-out;
 }
 
-.solid-nav:hover {
-	background-color: #fff;
+.solid-nav .navbar-nav .nav-item a.menu-link,
+.mobile-nav .navbar-nav .nav-item a.menu-link {
+	color: #7b7b7b!important;
+	font-weight: 300;
+	transition: color 0.3s ease-in-out;
 }
 
-.solid-nav .navbar-nav .nav-item a.menu-link,
-.mobile-nav .navbar-nav .nav-item a.menu-link,
 .solid-nav.navbar-default .navbar-brand,
 .navbar-default .mobile-nav .navbar-brand {
-	color: #5b5b5b!important;
-	transition: color 0.5s ease-in-out;
+	color: #4b4b4b;
+	font-weight: 800;
+	transition: color 0.3s ease-in-out;
 }
 
 .solid-nav .navbar-nav .nav-item a.menu-link:hover,
 .mobile-nav .navbar-nav .nav-item a.menu-link:hover,
 .solid-nav.navbar-default .navbar-brand:hover,
 .navbar-default .mobile-nav .navbar-brand:hover {
-	color: #e2e2e2!important;
+	color: #0a0912!important;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -483,8 +485,18 @@ ul.buttons {
 	}
 }
 
+#portfolio .tile li {
+	transition: display 0.5s ease;
+}
+
 .portfolio li img {
 	width: 100%;
+}
+
+#portfolio li.burgerbuilder {
+	background: url(../portfolio/burgerbuilder.png);
+	background-size: cover;
+	background-position: center;
 }
 
 #portfolio li.homechef {

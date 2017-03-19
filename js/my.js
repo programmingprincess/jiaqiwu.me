@@ -39,8 +39,8 @@ jQuery(document).ready(function($) {
 
     //close navbar when link is pressed
     $(document).click(function(e) {
-    	if (!$(e.target).is('a') && !$(e.target).hasClass('navbar-toggle')) {
-        	$('.collapse').collapse('hide');
+        if (!$(e.target).is('a') && !$(e.target).hasClass('navbar-toggle')) {
+            $('.collapse').collapse('hide');
         }
 
         if($('.navbar-collapse').attr('aria-expanded') == 'true') {
@@ -72,13 +72,7 @@ jQuery(document).ready(function($) {
             }, 1500, 'easeInOutExpo');
             e.preventDefault();
         });
-        $('#scrollup').bind('click', function(e) {
-            $('html, body').stop().animate({
-                scrollTop: 0
-            }, 1500, 'easeInOutExpo');
-            e.preventDefault();
-        });
-        $('.navbar-brand').bind('click', function(e) {
+        $('#scrollup, .navbar-brand').bind('click', function(e) {
             $('html, body').stop().animate({
                 scrollTop: 0
             }, 1500, 'easeInOutExpo');
@@ -153,16 +147,16 @@ jQuery(document).ready(function($) {
         var filter = $(this).text().toLowerCase().replace(' ',
             '-');
         if (filter == 'all') {
-            $('#portfolio .tile li.hidden').fadeIn('slow').removeClass(
+            $('#portfolio .tile li.hidden').removeClass(
                 'hidden').css('display', 'inline-block');
         } else {
             $('#portfolio .tile li').each(function() {
                 if (!$(this).hasClass(filter)) {
-                    $(this).fadeOut('normal').addClass(
+                    $(this).addClass(
                         'hidden');
                 } else {
                     $(this).hide(); //hide elements to add fade effect if they were prexisting on page
-                    $(this).fadeIn('slow').removeClass(
+                    $(this).removeClass(
                         'hidden').css('display',
                         'inline-block');
                 }

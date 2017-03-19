@@ -118,8 +118,6 @@
                 <li class = "wow slideInLeft" data-wow-delay="0.3s">Java</li>
                 <li class = "wow slideInLeft" data-wow-delay="0.4s">JavaScript</li>
                 <li class = "wow slideInLeft" data-wow-delay="0.5s">PHP</li>
-                <li class = "wow slideInLeft" data-wow-delay="0.6s">Swift</li>
-                <li class = "wow slideInLeft" data-wow-delay="0.7s">Python</li>
             </ul>
         </div>
     </section>
@@ -129,7 +127,7 @@
                 <li class = "menu-link active" id="all">All</li>
                 <li class = "menu-link" id="app">App</li>
                 <li class = "menu-link" id="web">Web</li>
-                <li class = "menu-link" id="science">Science</li>
+                <li class = "menu-link" id="talks">Talks</li>
             </ul>
 
             <ul class="tile">
@@ -139,6 +137,16 @@
                         <div class="tile-text">
                             Web Application: Java
                             <h4 class="big">Study Genie</h4>
+                        </div>
+                    </div></a>
+                </li>
+
+                <li class="web burgerbuilder">
+                     <a href = "http://github.com/programmingprincess/burgerbuilder" target = "_blank">
+                    <div class="tile-overlay">
+                        <div class="tile-text">
+                            Web: Hackathon Project
+                            <h4 class="big">Burger Builder</h4>
                         </div>
                     </div></a>
                 </li>
@@ -153,7 +161,7 @@
                     </div></a>
                 </li>
 
-                <li class="science igem">
+                <li class="talks igem">
                     <a href = "https://fullcircle.asu.edu/students/impressive-at-igem/" target = "_blank">
                     <div class="tile-overlay">
                         <div class="tile-text">
@@ -198,7 +206,7 @@
 
                 <!--<li class = "website">SPARCe</li>-->
 
-                <li class="science furi">
+                <li class="talks furi">
                     <a href = "#" data-toggle="modal" data-target="#furi">
                     <div class="tile-overlay">
                         <div class="tile-text">
@@ -209,7 +217,7 @@
                 </li>
 
 
-                <li class="science ibe">
+                <li class="talks ibe">
                     <a href="https://engineering.asu.edu/undergraduate-research/project/jiaqi-wu-furi-travel-grant/" target = "_blank">
                     <div class="tile-overlay">
                         <div class="tile-text">
@@ -240,11 +248,11 @@
                     </div></a>
                 </li>
 
-                <li class="science synberc">
+                <li class="talks synberc">
                     <a href="http://blogs.plos.org/synbio/2015/11/04/celebrating-nearly-a-decade-of-research-at-synberc/" target="_blank">
                     <div class="tile-overlay">
                         <div class="tile-text">
-                            Syn Bio: Poster and Presentation
+                            Syn Bio: Presentation and Poster
                             <h4 class="big">Synberc 2015</h4>
                         </div>
                     </div></a>
@@ -268,23 +276,20 @@
         <div class = "container">
             <div class="row icons">
                 <div class="col-sm-4">
-                    <a href="http://twitter.com/thejiaqiwu" target = "_blank"><i aria-hidden=
-                    "true" class="fa fa-twitter fa-5x wow bounceIn" data-wow-delay="0s"></i></a>
+                    <a href="http://twitter.com/thejiaqiwu" onclick = "ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'twitter'});" target = "_blank"><i aria-hidden= "true" class="fa fa-twitter fa-5x wow bounceIn" data-wow-delay="0s"></i></a>
                 </div>
                 <div class="col-sm-4">
-                    <a href="http://github.com/programmingprincess" target = "_blank"><i aria-hidden=
-                    "true" class="fa fa-github fa-5x wow bounceIn" data-wow-delay="0.2s"></i></a>
+                    <a href="http://github.com/programmingprincess" onclick = "ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'github'});" target = "_blank"><i aria-hidden= "true" class="fa fa-github fa-5x wow bounceIn" data-wow-delay="0.2s"></i></a>
                 </div>
                 <div class="col-sm-4">
-                    <a href="http://linkedin.com/in/jiaqiwu1" target = "_blank"><i aria-hidden=
-                    "true" class="fa fa-linkedin fa-5x wow bounceIn" data-wow-delay="0.4s"></i></a>
+                    <a href="http://linkedin.com/in/jiaqiwu1" onclick = "ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'linkedin'});" target = "_blank"><i aria-hidden= "true" class="fa fa-linkedin fa-5x wow bounceIn" data-wow-delay="0.4s"></i></a>
                 </div>
             </div>
             <div class="chat">
                 <h2>I'm available to chat.</h2>
             </div>
             <div class="email">
-                <a href = "mailto:jiaqiwu@asu.edu"><button class="button button--aylen">Email</button></a>
+                <a href = "mailto:jiaqiwu@asu.edu" onclick = "ga('send', 'event', { eventCategory: 'button', eventAction: 'click', eventLabel: 'email'});"><button class="button button--aylen">Email</button></a>
             </div>
         </div>
     </section>
@@ -300,7 +305,7 @@
             </div>
 
             <!--<p class = "end">Made with <i class="fa fa-heart" aria-hidden="true" style = "color: red"></i> by Jiaqi Wu</p>-->
-            <p class = "end">© 2016 Jiaqi Wu. All rights reserved. <br>
+            <p class = "end">© 2017 Jiaqi Wu. All rights reserved. <br>
                 jiaqiwu@asu.edu </p>
 
         </section>
@@ -324,12 +329,15 @@
             <h4 class="modal-title"> StudyGenie: A web application </h4>
           </div>
           <div class="modal-body">
-            <p> Study Genie is a Java Servlet that aims to explore the role of collaborative learning and
-                note-taking on student performance in lower division computer science courses. This application
-                differs from others in that it allows students to share and manipulate their notes on a
-                smaller, topic-based scale, in the form of mini notecards.
+            <h4> <b>Still under development </b></h4>
+            <p> Study Genie is a web-based study tool that aims to explore the role of collaborative learning and note-taking on student performance in lower division computer science courses. Students may write their notes or code snippets in mini notecards, and then assemble them into a cheatsheet for use during an exam.
             </p>
-            <p>This project is in a very early development phase. More details coming soon. </p>
+            <img src='http://i.imgur.com/dyAhRkP.gif' title='Demo of study genie' width='' alt='Video Walkthrough' />
+
+            <p>All student movements are tracked (i.e., notecard clicked, cheatsheet added, copying and pasting vs. typing), allowing my team to analyze and understand how students study, and then compare these statistics with overall student performance in the course and exams. </p>
+
+            <p>This application differs from others in that it allows students to share and manipulate their notes on a smaller, topic-based scale, in the form of mini notecards. Deployed on a Windows Server using IIS and HTTP Platform Handler. </p>
+
             <p><b>Skills utilized: </b> Java, HTML/CSS, JavaScript/jQuery, mySQL, and more</p>
           </div>
           <div class="modal-footer">
