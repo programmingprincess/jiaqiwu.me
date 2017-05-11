@@ -430,6 +430,11 @@ a.scrolldown:focus {
 	width: 100%;
 }
 
+.caption {
+	font-size: 12px;
+	text-align: center;
+}
+
 
 .modal-backdrop.in {
 	opacity: 0.9;
@@ -568,6 +573,12 @@ ul.buttons {
 	background: url(../portfolio/sundevildice.png);
 	background-size: cover;
 	background-position: center center;
+}
+
+#portfolio li.voiceandtone {
+	background: url(../portfolio/voice-and-tone.png);
+	background-size: cover;
+	background-position: top left;
 }
 
 /*#portfolio .tile li {
